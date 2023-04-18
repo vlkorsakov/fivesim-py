@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fivesim-py"
+version = "0.1.0"
+description = "A library that implements access to the FiveSim API from python."
+authors = ["vlkorsakov <vlkorsakov256@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fivesim_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dataclass-rest = "^0.3.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.261"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
